@@ -1,31 +1,36 @@
--- Create ShippingDetails table
-CREATE TABLE ShippingDetails (
-    OrderID VARCHAR(50) PRIMARY KEY,
-    ShipCity VARCHAR(100),
-    ShipState VARCHAR(100),
-    ShipPostalCode VARCHAR(20),
-    ShipCountry VARCHAR(50)
-);
-
 -- Create Orders table
 CREATE TABLE Orders (
     OrderID VARCHAR(50) PRIMARY KEY,
-    Date DATE,
-    Status VARCHAR(50),
-    Fulfilment VARCHAR(50),
-    SalesChannel VARCHAR(50),
-    ShipServiceLevel VARCHAR(50),
-    B2B BOOLEAN,
-	FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+    Date DATE NULL, 
+    Status VARCHAR(50) NULL,
+    Fulfilment VARCHAR(50) NULL,
+    SalesChannel VARCHAR(50) NULL,
+    ShipServiceLevel VARCHAR(50) NULL,
+    B2B BOOLEAN NOT NULL
+);
+
+-- Create ShippingDetails table
+CREATE TABLE ShippingDetails (
+    OrderID VARCHAR(50) PRIMARY KEY,
+    ShipCity VARCHAR(100) NULL, 
+    ShipState VARCHAR(100) NULL,  
+    ShipPostalCode VARCHAR(20) NULL,  
+    ShipCountry VARCHAR(50) NULL,  
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 
 -- Create Products table
 CREATE TABLE Products (
     SKU VARCHAR(50),
-    OrderID VARCHAR(50) PRIMARY KEY,
-    Style VARCHAR(50),
-    Category VARCHAR(50),
-    Amount DECIMAL(10, 2),
-    Currency VARCHAR(10),
+    OrderID VARCHAR(50),
+    Style VARCHAR(50) NULL, 
+    Category VARCHAR(50) NULL, 
+    Qty INT NULL, 
+    Currency VARCHAR(10) NULL,  
+    Amount DECIMAL(10, 2) NULL,  
+    PRIMARY KEY (OrderID, SKU),
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
+
+
+
