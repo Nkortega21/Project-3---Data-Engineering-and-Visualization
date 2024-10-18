@@ -7,15 +7,23 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Function to process CSV data and generate heatmap
+// Function to process CSV data and generate heatmap and markers
 function generateHeatmap(data) {
     var heatData = [];
 
     data.forEach(function(row) {
-        var lat = parseFloat(row['Latitude']);
-        var lon = parseFloat(row['Longitude']);
+        var lat = parseFloat(row['Lat']);
+        var lon = parseFloat(row['Lon']);
         var count = parseFloat(row['Count']);
+        var state = row['State'];
+
         if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
+            // Add data to heatmap array
             heatData.push([lat, lon, count]);
+
+            // Add marker for each location with a popup showing State and Count
+            var marker = L.marker([lat, lon]).addTo(map);
+            marker.bindPopup(<b>${state}</b><br>Count: ${count}).openPopup();
         }
     });
 
