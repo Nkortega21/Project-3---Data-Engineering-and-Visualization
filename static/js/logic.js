@@ -15,10 +15,11 @@ function generateHeatmap(data) {
         var lon = parseFloat(row['Longitude']); // Ensure these match your CSV headers
         var count = parseFloat(row['Count']);
         var state = row['ShipState']; // Updated to use 'ShipState'
+        var state = row['ShipState'] ? row['ShipState'].trim() : ''; // Trim spaces
 
         if (!isNaN(lat) && !isNaN(lon) && !isNaN(count) && !isNaN(state)) {
             // Add data to heatmap array
-            heatData.push([lat, lon, count]);
+            heatData.push([lat, lon, count]);   
 
             // Add marker for each location with a popup showing ShipState and Count
             var marker = L.marker([lat, lon]).addTo(map);
