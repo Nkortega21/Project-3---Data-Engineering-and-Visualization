@@ -16,7 +16,7 @@ function generateHeatmap(data) {
         var count = parseFloat(row['Count']);
         var state = row['ShipState']; // Updated to use 'ShipState'
 
-        if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
+        if (!isNaN(lat) && !isNaN(lon) && !isNaN(count) && !isNaN(state)) {
             // Add data to heatmap array
             heatData.push([lat, lon, count]);
 
