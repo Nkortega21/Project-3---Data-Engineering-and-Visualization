@@ -11,8 +11,8 @@ function generateHeatmap(data) {
     var heatData = [];
 
     data.forEach(function(row) {
-        var lat = parseFloat(row['Latitude']);  // Updated to match CSV header 'Latitude'
-        var lon = parseFloat(row['Longitude']); // Updated to match CSV header 'Longitude'
+        var lat = parseFloat(row['Latitude']);  // Use 'Latitude'
+        var lon = parseFloat(row['Longitude']); // Use 'Longitude'
         var count = parseFloat(row['Count']);
         var state = row['State'];
 
@@ -22,13 +22,13 @@ function generateHeatmap(data) {
 
             // Add marker for each location with a popup showing State and Count
             var marker = L.marker([lat, lon]).addTo(map);
-            marker.bindPopup(`<b>${state}</b><br>Count: ${count}`).openPopup();  // Popup with state and count
+            marker.bindPopup(`<b>${state}</b><br>Count: ${count}`).openPopup(); // Ensure backticks are used
         }
     });
 
     // Create the heatmap layer
     L.heatLayer(heatData, {
-        radius: 100,  // Adjusted for better visual
+        radius: 100,
         blur: 15,
         maxZoom: 17,
     }).addTo(map);
