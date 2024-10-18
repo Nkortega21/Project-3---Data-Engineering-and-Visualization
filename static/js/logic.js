@@ -12,8 +12,8 @@ function generateHeatmap(data) {
     var heatData = [];
 
     data.forEach(function(row) {
-        var lat = parseFloat(row['Lat']);
-        var lon = parseFloat(row['Lon']);
+        var lat = parseFloat(row['Latitude']);
+        var lon = parseFloat(row['Longitude']);
         var count = parseFloat(row['Count']);
         var state = row['State'];
 
