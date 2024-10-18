@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Function to determine radius based on count
 function getRadius(count) {
     // You can adjust this logic to fit your data scale
-    return Math.sqrt(count) * 10; // Adjust multiplier as needed
+    return Math.sqrt(count) * 100; // Adjust multiplier as needed
 }
 
 // Function to process CSV data and generate heatmap and markers
@@ -33,7 +33,7 @@ function generateHeatmap(data) {
 
     // Create the heatmap layer
     L.heatLayer(heatData, {
-        radius: 50, // Base radius for the heatmap
+        radius: 100, // Base radius for the heatmap
         blur: 15,
         maxZoom: 17,
     }).addTo(map);
