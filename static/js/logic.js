@@ -11,18 +11,18 @@ function generateHeatmap(data) {
     var heatData = [];
 
     data.forEach(function(row) {
-        var lat = parseFloat(row['Latitude']);  // Use 'Latitude'
-        var lon = parseFloat(row['Longitude']); // Use 'Longitude'
+        var lat = parseFloat(row['Latitude']);  // Ensure these match your CSV headers
+        var lon = parseFloat(row['Longitude']); // Ensure these match your CSV headers
         var count = parseFloat(row['Count']);
-        var state = row['ShipState'];
+        var state = row['ShipState']; // Updated to use 'ShipState'
 
         if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
             // Add data to heatmap array
             heatData.push([lat, lon, count]);
 
-            // Add marker for each location with a popup showing State and Count
+            // Add marker for each location with a popup showing ShipState and Count
             var marker = L.marker([lat, lon]).addTo(map);
-            marker.bindPopup(`<b>${state}</b><br>Count: ${count}`).openPopup(); 
+            marker.bindPopup(`<b>${state}</b><br>Count: ${count}`).openPopup(); // Use backticks for template literals
 }});
 
     // Create the heatmap layer
