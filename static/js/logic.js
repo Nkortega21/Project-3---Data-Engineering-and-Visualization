@@ -15,9 +15,8 @@ function generateHeatmap(data) {
         var lon = parseFloat(row['Longitude']); // Ensure these match your CSV headers
         var count = parseFloat(row['Count']);
         var state = row['ShipState']; // Updated to use 'ShipState'
-        var state = row['ShipState'] ? row['ShipState'].trim() : ''; // Trim spaces
 
-        if (!isNaN(lat) && !isNaN(lon) && !isNaN(count) && !isNaN(state)) {
+        if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
             // Add data to heatmap array
             heatData.push([lat, lon, count]);   
 
