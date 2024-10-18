@@ -21,7 +21,7 @@ function generateHeatmap(data) {
 
     // Create the heatmap layer
     L.heatLayer(heatData, {
-        radius: 25,
+        radius: 100,
         blur: 15,
         maxZoom: 17,
     }).addTo(map);
