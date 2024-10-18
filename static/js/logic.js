@@ -6,6 +6,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+// Function to determine radius based on count
+function getRadius(count) {
+    // You can adjust this logic to fit your data scale
+    return Math.sqrt(count) * 10; // Adjust multiplier as needed
+}
+
 // Function to process CSV data and generate heatmap and markers
 function generateHeatmap(data) {
     var heatData = [];
@@ -17,8 +23,8 @@ function generateHeatmap(data) {
         var state = row['ShipState']; // Updated to use 'ShipState'
 
         if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-            // Add data to heatmap array
-            heatData.push([lat, lon, count]);   
+            // Add data to heatmap array with radius based on count
+            heatData.push([lat, lon, getRadius(count)]);   
 
             // Add marker for each location with a popup showing ShipState and Count
             var marker = L.marker([lat, lon]).addTo(map);
@@ -27,7 +33,7 @@ function generateHeatmap(data) {
 
     // Create the heatmap layer
     L.heatLayer(heatData, {
-        radius: count,
+        radius: 25, // Base radius for the heatmap
         blur: 15,
         maxZoom: 17,
     }).addTo(map);
