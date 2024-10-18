@@ -22,9 +22,8 @@ function generateHeatmap(data) {
 
             // Add marker for each location with a popup showing State and Count
             var marker = L.marker([lat, lon]).addTo(map);
-            marker.bindPopup(`<b>${state}</b><br>Count: ${count}`).openPopup(); // Ensure backticks are used
-        }
-    });
+            marker.bindPopup(`<b>${state}</b><br>Count: ${count}`).openPopup(); 
+}});
 
     // Create the heatmap layer
     L.heatLayer(heatData, {
