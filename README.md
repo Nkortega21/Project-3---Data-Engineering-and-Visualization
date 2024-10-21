@@ -20,6 +20,13 @@ We hope to have presented our information, including the Jupyter Notebook, outpu
 
 ## Introduction
 
+As for our project, we have decided to present a diverse portfolio via our shared GitHub repository for the submission of this project. Included in the portfolio are all of the necessary files and resources we deemed necessary to satisfy and hopefully reach all of the requirements outlined in the project rubric. 
+
+Our main objective was to articulate responses for the defined parameters of the project, specifically the data engineering route. We have found a suitable, interesting dataset and have manipulated the raw dataset into smaller, informative tables, or data frames, that we have uploaded into SQL, by developing a schema outlining each column, primary, and foreign key necessary for future manipulation using basic and advanced SQL queries. We have acquired access to a Google API which we have incorporated into our project by implementing the acquired data into our database design portion by reading the API, creating a new data frame, and using the data to create an advanced heatmap correlating the relative size of each marker relative to the number of transactions, per state, over the duration covered in the data set. 
+
+.........
+
+
 
 ## Tools
 
