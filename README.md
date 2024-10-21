@@ -1,6 +1,6 @@
 # Project-3---Data-Engineering-and-Visualization
 ## Table of Contents
-- [Overview and purpose](#Overview-and-purpose)
+- [Overview and Purpose](#Overview-and-Purpose)
 - [Introduction](#Introduction)
 - [Tools](#Tools)
 - [Key Steps](#key-steps)
