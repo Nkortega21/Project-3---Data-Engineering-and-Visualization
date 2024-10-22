@@ -34,8 +34,9 @@ CREATE TABLE Products (
 
 -- Create Completed Orders Table
 CREATE TABLE completed_orders (
-    OrderID VARCHAR(50) PRIMARY KEY,  
-    Status VARCHAR(100) NOT NULL,      
-    Fulfilment VARCHAR(100),            
-    Amount DECIMAL(10, 2) NOT NULL      
+    OrderID VARCHAR(50) PRIMARY KEY,
+    Status VARCHAR(100) NOT NULL,
+    Fulfilment VARCHAR(100),
+    Amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
