@@ -29,20 +29,20 @@ We hope to have presented our information in a logical, navigable format that is
 
 
 ## Tools
-1. Jupyter notebook
-2. PostgreSQL
+### 1. Jupyter notebook
+### 2. PostgreSQL
 
 ## Key Steps
 
-1. ETL
+### 1. ETL
 
 First, we downloaded the original data from the source, and in the first step, we performed data deduplication, reviewed the data information, and checked the results after deduplication. Second, we made adjustments to data formats that did not meet the requirements, such as removing decimal points from postal codes, correcting the case of column names, and removing spaces. Finally, following database table creation principles, we split the original data into three tables, deduplicated the extracted data, and made adjustments to formats and naming conventions to ensure that no errors occur when importing the data.
 
-2. Database Design
+### 2. Database Design
 
 Firstly, we used QuickDBD to create the ERD text and relationship diagram. Then, we created the database table schema in PostgreSQL. In the schema, we defined the primary and foreign keys for each table and specified the format and length of each field. Finally, we wrote query statements for each table.
 
-3. Data Analysis and Visualization
+### 3. Data Analysis and Visualization
 
 Based on the data after the ETL process, we performed some data analysis and visualization. For example, we analyzed the top-ranking cities in terms of sales, and based on geographic coordinates and sales data, we created a heatmap using Leaflet.
 
