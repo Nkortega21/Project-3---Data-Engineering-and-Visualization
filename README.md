@@ -29,8 +29,8 @@ We hope to have presented our information in a logical, navigable format that is
 
 
 ## Tools
-Jupyter notebook
-PostgreSQL
+1. Jupyter notebook
+2. PostgreSQL
 
 ## Key Steps
 1. Database Design
