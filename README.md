@@ -54,9 +54,17 @@ Firstly, we used QuickDBD to create the ERD text and relationship diagram. Then,
 
 Based on the data after the ETL process, we performed some data analysis and visualization. For example, we analyzed the top-ranking cities in terms of sales, and based on geographic coordinates and sales data, we created a heatmap using Leaflet.
 
-## Ethical considerations
+## Ethical Considerations in Data Usage
 
-After recently being introduced to the ethical side of data, and some examples of where people's personal information may have been distributed inappropriately, we did not want to bridge to a point where we may have been reappropriating information unethically. Our data set does not contain information that we consider too personal or approaching a point where our project could be regarded as unethical. The information characterized in the dataset does not reach a level where a third party could derive any personal information, as the information leading down that path remains inaccessible. The Order ID and Fulfillment columns could potentially be the sources, ethically, where some information could potentially be released without the direct consent of either the individual ordering the item or the merchant who sells the item. Amazon, the company that releases the data, decided to remove all the direct characteristics that could be used detrimentally toward any person who shops on the website. All the other information left represented in the dataset does not give anyone the ability to discern a person’s identity or place of residence. If Amazon were to have not removed the information from the public data any company or anyone could use the included material to potentially harm a person, manufacturer, or wholesaler.  We think that this practice is critically necessary in our modern society where innocent people are abused through data leaks frequently at no fault of their own. Keeping important information private should be paramount for small and large corporations as technological knowledge is at an all-time high. We feel like we have not tangibly entered a place where there is any potential malice of any kind for anyone. 
+Recently, I've become more aware of the ethical considerations surrounding data usage, especially regarding the inappropriate sharing of personal information. It’s crucial to avoid situations where we might unintentionally reappropriate data unethically.
+
+In our project, we ensured that our dataset does not contain sensitive personal information that could be considered unethical to use. The data we have is structured in a way that prevents third parties from deriving any personal details, as the crucial identifying information is not accessible.
+
+While the Order ID and Fulfillment columns could theoretically pose ethical concerns, we recognize that Amazon, the data provider, has taken steps to remove any direct identifiers that could harm individuals shopping on their platform. The remaining data does not allow anyone to discern a person’s identity or location.
+
+If Amazon had not removed this sensitive information, it could have been misused by companies or individuals, potentially harming customers, manufacturers, or wholesalers. We believe it is vital to protect personal information, especially in today's world, where data breaches happen frequently and often without fault to the individuals affected.
+
+It’s essential for both small and large corporations to prioritize data privacy, especially as technological capabilities continue to grow. We feel confident that our project has not crossed any ethical boundaries and poses no risk to anyone involved.
 
 
 ## References for the data
