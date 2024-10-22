@@ -30,7 +30,11 @@ We hope to have presented our information in a logical, navigable format that is
 
 ## Tools
 ### 1. Jupyter notebook
+  Using Jupyter Notebook as our main source for the entirety of the ETL process as we uploaded, manipulated, and exported the data into CSV files for upload into SQL. We used a plethora of basic and complex functions built into Pandas, NumPy, MatPlotLib and StatsModels libraries. We conducted a multitude of queries and, we think, ultimately achieved our goal of presenting a thought-out, analytical project that meets the requirements. 
 ### 2. PostgreSQL
+  Using our known version of SQL, we created a schema, uploaded the CSV files we created within our Jupyter Notebook, and formulated a database consisting of four tables that can be later worked to analyze any mathematical or non-numerical question that arises. 
+### 3. VS Code
+  Using VS Code to create an HTML index, and JavaScript logic file that runs our heatmap outlining some components of our data. We were able to accomplish our end goal and hope that our heatmap is a useful systematic tool that helps the person to visualize the distribution of purchases for each distinct state within India. 
 
 ## Key Steps
 
