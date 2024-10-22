@@ -1,6 +1,6 @@
 # Project-3---Data-Engineering-and-Visualization
 ## PowerPoint Presentation
-[Data Engineering and Visualization PowerPoint]([https://docs.google.com/presentation/d/1F5YpvIXZ1ZmhQEEUBNxYIyKEwvGo52yI001LStdzNCs/edit?usp=sharing](https://docs.google.com/presentation/d/1F5YpvIXZ1ZmhQEEUBNxYIyKEwvGo52yI001LStdzNCs/edit?usp=sharing))
+[Data Engineering and Visualization PowerPoint](https://docs.google.com/presentation/d/1F5YpvIXZ1ZmhQEEUBNxYIyKEwvGo52yI001LStdzNCs/edit?usp=sharing](https://docs.google.com/presentation/d/1F5YpvIXZ1ZmhQEEUBNxYIyKEwvGo52yI001LStdzNCs/edit?usp=sharing)
 ## Table of Contents
 - [Overview and Purpose](#Overview-and-Purpose)
 - [Introduction](#Introduction)
