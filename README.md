@@ -45,5 +45,7 @@ After recently being introduced to the ethical side of data, and some examples o
 
 
 ## References for the data
+https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data
+![image](https://github.com/user-attachments/assets/f6426645-f217-41f4-8e24-1bde3677717c)
 
 ## References for codes
