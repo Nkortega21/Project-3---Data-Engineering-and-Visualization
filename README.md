@@ -36,7 +36,7 @@ We hope to have presented our information in a logical, navigable format that is
 
 ### 1. ETL
 
-First, we downloaded the original data from the source, and in the first step, we performed data deduplication, reviewed the data information, and checked the results after deduplication. Second, we made adjustments to data formats that did not meet the requirements, such as removing decimal points from postal codes, correcting the case of column names, and removing spaces. Finally, following database table creation principles, we split the original data into three tables, deduplicated the extracted data, and made adjustments to formats and naming conventions to ensure that no errors occur when importing the data.
+First, we downloaded the original data from the source, and in the first step, we performed data deduplication, reviewed the data information, and checked the results after deduplication. Second, we made adjustments to data formats that did not meet the requirements, such as removing decimal points from postal codes, correcting the case of column names, and removing spaces. Finally, following database table creation principles, we split the original data into four tables, deduplicated the extracted data, and made adjustments to formats and naming conventions to ensure that no errors occur when importing the data.
 
 ### 2. Database Design
 
