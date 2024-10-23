@@ -75,3 +75,5 @@ Screenshot of data source:
 ![image](https://github.com/user-attachments/assets/f6426645-f217-41f4-8e24-1bde3677717c)
 
 ## References for codes
+
+We accessed some outides sources, such as CHAT GPT and previous lessons or homework modules, to aid in the completion of some parts of the code such as the Stats Model Library and the Leaflet heatmap portions. We acknowledge the changing and developing world of Data Analytics, along with academic and professional honesty and feel we have presented a project unique and distinctly our own.  
